@@ -3,7 +3,7 @@
  * This file contains Codewiz_Logger class
  *
  * @package    Codewiz_Logger
- * @author     Chris Langton <clangton@rockinfo.com.au>
+ * @author     Chris Langton <chrislangton84@gmail.com>
  */
 class Codewiz_Logger {
     private static $_defaults = array();
