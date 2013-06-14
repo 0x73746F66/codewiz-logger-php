@@ -74,5 +74,25 @@ logger.restore.display_errors = true
 logger.restore.error_reporting = true
 ```
 
+Here is the sql for the table to store all the collected logging data;
+```sql
+CREATE TABLE `logger` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `type` varchar(45) NOT NULL,
+  `dtcreated` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `user_id` int(11) NOT NULL,
+  `errno` varchar(45) NOT NULL,
+  `errstr` varchar(255) NOT NULL,
+  `errfile` varchar(255) DEFAULT NULL,
+  `errline` int(12) DEFAULT NULL,
+  `backtrace` longtext,
+  `post` text,
+  `get` text,
+  `cookie` text,
+  `server` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
+
 Please feel free to contact me with any enquiries; http://chrisdlangton.com
 My site contains great tech articles: http://codewiz.biz
