@@ -1,6 +1,9 @@
 Codewiz_Logger
 ==============
 
+Documention: http://logger.codewiz.biz/
+==============
+
 A PHP logging API that also automatically catches all uncaught errors, also compatible with Zend Framework
 
 Drop the "Codewiz" folder in your zend library directory, or if not using ZF drop it into your include path.
